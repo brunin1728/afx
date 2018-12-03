@@ -1,0 +1,24 @@
+<ion-header class="tolbar">
+    <ion-navbar>
+      <button ion-button menuToggle right>
+        <ion-icon name="menu" style="color: #fff"></ion-icon>
+      </button>
+      <ion-title><img src="assets/imgs/logo.png" width="120px"></ion-title>
+
+    </ion-navbar>
+  </ion-header>
+
+
+
+
+<ion-content  padding class="body-background">
+
+
+    <ion-list>
+        <button ion-item *ngFor="let item of lista" (click)="abrirPdf(item.ID_PDT)" class="body-background">
+          {{ item.TITULO }}
+        </button>
+    </ion-list>
+
+
+</ion-content>
